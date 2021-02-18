@@ -51,3 +51,9 @@ deno run --allow-net  index.ts
 ```
 
 Checkout files in [examples](examples/) folder.
+
+### Watch mode
+
+```shell
+deno run --watch --unstable index.ts
+```
