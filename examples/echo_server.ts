@@ -10,5 +10,6 @@ const listener = Deno.listen({ hostname, port });
 
 console.log(`Listen on ${hostname}:${port}`);
 for await (const conn of listener) {
+  console.log("Connection initiated");
   Deno.copy(conn, conn);
 }

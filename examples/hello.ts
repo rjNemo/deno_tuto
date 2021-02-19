@@ -1,6 +1,16 @@
 // Library exporting `sayHello` function
 
-const capitalize = (word: string) =>
+/**
+ * Title case the given word. First character uppercase and the rest lowercase.
+ * @param {string} word 
+ * @returns {string} Capitalized word. 
+ */
+const capitalize = (word: string): string =>
   `${word.charAt(0).toUpperCase()}${word.toLowerCase().slice(1)}`;
 
-export const sayHello = (name: string) => `Hello ${capitalize(name)}`;
+/**
+ * Greets the named user after name capitalization
+ * @param {string} name  
+ * @returns {string} Greeting to the user 
+ */
+export const sayHello = (name: string): string => `Hello ${capitalize(name)}`;
